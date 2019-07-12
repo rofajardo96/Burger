@@ -1,11 +1,12 @@
   
   
     <!-- Left side (Burgers Available) -->
-     <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="left">
+     <div class="card bg-light mb-3" style="width: 500px;">
         <div class="card-header">Available</div>
         <div class="card-body">
              <div class=burgers-available>
-            <h3 class="submitFont">Available</h3>
+            <h3 class="submitFont">Waiting to Serve</h3>
             <div id="burgersAvailable">
 
         <!-- Dynamically Add User Burgers Here -->
@@ -15,7 +16,7 @@
                 <div class="input-group">
                     <li class="form-control">{{id}}. {{burger_name}}</li>
                     <span class="input-group-btn">
-                        <button class="btn btn-success devour-button" type="submit">Devour It!</button>
+                        <button class="btn btn-success devour-button" type="submit"><i class="fas fa-hamburger"></i></button>
                     </span>
                 </div>
           </form>
@@ -26,6 +27,8 @@
             </div>   
         </div>
     
+    </div>
+    </div>
     </div>
 
 
@@ -51,7 +54,7 @@
 </div> --}}
 
     <div class="right">
-    <div class="card bg-light mb-3" style="max-width: 18rem;">
+    <div class="card bg-light mb-3" style="width: 350px;">
         <div class="card-header">Yum</div>
         <div class="card-body">
             <div class=burger-devoured>

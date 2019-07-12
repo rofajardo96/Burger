@@ -3,7 +3,7 @@
     perspective: 40em;
     display: grid;
     transform-style: preserve-3d;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   
   .card1 {
@@ -117,8 +117,21 @@ body {
   .right{
       align-content: center;
       float:right;
+      margin-right: 25px;
   }
 
+  .left{
+    margin-left: 25px;
+    margin-top: 35px;
+  }
+
+  .card {
+      width: 300px;
+  }
+
+  
+
+ 
   
   
 
