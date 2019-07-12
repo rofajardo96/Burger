@@ -6,7 +6,7 @@
     margin-top: 20px;
   }
   
-  .card {
+  .card1 {
     grid-area: 1 / 1;
     height: 200px;
     width: 400px;
@@ -30,7 +30,7 @@
     font-weight: 900;
   }
   
-  .card .enclosed {
+  .card1 .enclosed {
     background: #000;
     line-height: 1;
     color: rgb(36, 115, 206);
@@ -112,6 +112,11 @@ body {
   .submitFont{
       color: black;
       
+  }
+
+  .right{
+      align-content: center;
+      float:right;
   }
 
   

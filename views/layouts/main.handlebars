@@ -7,7 +7,11 @@
     
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/f51a04bc22.js"></script>
     
     <!-- Custom CSS Styling -->
     <link rel="stylesheet" href="assets/css/burger_style.css">
@@ -18,19 +22,21 @@
 
     <!-- Page Container -->
     <div class="container-fluid">
+    
     <center>
-      <div class="row">
-    <div class="jumbotron">
-   <div class="wrapper">
-  <div class="card">
-    <h1>
-      <span class="enclosed">Mega Burger</span>
-    </h1>
-  </div>
-</div>       
+    <div class="jumbotron1">
+        <div class="wrapper">
+            <div class="card1">
+                <h1>
+                <span class="enclosed">Mega Burger</span>
+                </h1>
+            </div>
+        </div>  
+    </div>
+    </center>     
       
     
-    </center>
+    
     
 
       <br>
@@ -46,25 +52,45 @@
       <form action="burger/create" method="POST"> 
         
         <!-- Text Area Input -->
-        <div class="row">
-          <!-- Empty Div to help center textarea -->
-          <div class="col-md-3"></div> 
+       
+         
 
           <!-- Burger Input Box -->
-          <div class="form-group col-md-6">
-            <center><label for="new_burger" class="submitFont">New Order</label></center>
-            <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required value="" name="burger_name"></textarea>
-          </div>
-         
-          <div class="col-md-3"></div> 
+        <center>
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Place Your Order</div>
+            <div class="card-body">
+                <div class= new-order>
+                <label for="new_burger" class="submitFont">New Order</label>
+                <textarea class="form-control" type="text" id="new_burger required value="" name="burger_name"></textarea>
+             </div>
+    
         </div>
+        </center>
+
+         
+         
       
         <!-- Submit Button -->
         <center>
-          <button id="submit-button" type="submit" class="btn btn-danger">Make my Burger!</button>
+          <button id="submit-button" type="submit" class="btn btn-danger"><i class="fas fa-hamburger"></i></button>
         </center>
       </form>
       <br>
     </div>
   </body>
 </html> 
+
+ {{!-- <center><label for="new_burger" class="submitFont">New Order</label></center>
+            <textarea class="form-control" type="text" id="new_burger required value="" name="burger_name"></textarea> --}}
+
+{{!-- <div class="card bg-light mb-3" style="max-width: 18rem;">
+  <div class="card-header">New Order</div>
+  <div class="card-body">
+     <div class= new-order>
+            <label for="new_burger" class="submitFont">New Order</label>
+            <textarea class="form-control" type="text" id="new_burger required value="" name="burger_name"></textarea>
+    </div>
+    
+  </div>
+</div> --}}
