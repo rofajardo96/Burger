@@ -1,4 +1,16 @@
 var mysql = require("mysql");
+var connection;
+
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'Pablo@12396',
+    database: 'burgers_db'
+  });
+};
 
 var connection = mysql.createConnection({
   host: "localhost",
@@ -18,4 +30,5 @@ connection.connect(function(err) {
 });
 
 // Export connection for our ORM to use.
+connection.connection();
 module.exports = connection;
